@@ -1,0 +1,299 @@
+/* Reset */
+body, h1, h2, p, button {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fdfdfd;
+  padding: 20px;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 343px;
+  height: 603px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.title {
+  text-align: center;
+  color: #FF6B82;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 15px;
+  display: flex;
+  align-items: center; /* Align text and lines vertically */
+  justify-content: center; /* Center the content horizontally */
+  
+}
+
+.title .line {
+  flex-grow: 1; /* Allow the lines to expand to fill space */
+  height: 1px; /* Line thickness */
+  background-color: #C8C8C8; /* Line color matching the title */
+}
+
+
+.interactive-box {
+  border: 2px solid #ddd;
+ height: 74.11px;
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.interactive-box:hover {
+  border-color: #FF6B82;
+  background-color: #FFF9FA;
+}
+
+.interactive-box .header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.interactive-box input {
+  cursor: pointer;
+}
+
+input[type="radio"]:checked {
+  accent-color: #FF6B82; /* Change the color of the radio button when checked */
+  border-color: #FF6B82;
+
+}
+
+
+.details {
+  flex-grow: 1;
+  display: flex;
+}
+
+.details h2 {
+  font-size: 16px;
+  height: 17px;
+  margin-bottom: 5px;
+  color: #000000;
+  font-weight: 600;
+}
+
+.discount {
+  font-size: 14px;
+  color: white;
+  background-color: #FF6B82;
+  padding: 2px 6px;
+  margin-left: 5px;
+  width: 55px;
+  height: 17px;
+}
+
+/* .tag {
+  background-color: #FF6B82;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 5px;
+  margin-left: 5px;
+} */
+
+.price {
+  /* text-align: right; */
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+.price span {
+  font-size: 18px;
+  font-size: 14.46px;
+  font-weight: 500;
+  color: #333;
+}
+
+.price del {
+  font-size: 10px;
+  color: #999;
+  /* margin-left: 5px; */
+}
+
+.options {
+  display: none;
+  /* flex-direction: column; */
+  margin-top: 10px;
+}
+
+.option-header,
+.option-row {
+  display: grid;
+  grid-template-columns: 0.5fr 1.2fr 3fr; /* Layout for #, Size, and Color */
+  font-size: 10px;
+  font-weight: 400;
+ 
+}
+
+.option-header .hidden {
+  visibility: hidden; /* Hide the # header while maintaining layout alignment */
+  font-size: 10px;
+}
+
+.option-row div:first-child {
+  text-align: end;
+  margin-top: 8px;
+  font-size: 10px;
+  margin-right: 5px;
+  /* font-weight: bold; */
+  /* color: #333; */
+}
+
+.option-row select {
+  padding: 4px;
+  font-size: 10px;
+  border: 1px solid #ddd;
+  border-radius: 0px;
+  height: 25.31px;
+  width: 65.98px; 
+  margin-bottom: 10px;
+}
+
+
+.footer {
+  /* text-align: center; */
+  display: flex;
+  justify-content: space-between;
+  
+  /* padding-top: 20px; */
+}
+
+.free-delivery {
+  color: #FF6B82;
+  font-size: 14px;
+ font-weight: 500;
+}
+
+.total {
+  font-size: 14px;
+  font-weight: 400;
+  font-weight: 400;
+}
+
+
+button {
+  padding: 15px 20px;
+  background-color: #FF6B82;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #f33d6a;
+}
+
+
+
+#box2 .tag {
+  position: absolute;
+  top: -10px; /* Adjust to align with the top edge */
+  right: 8px; /* Align to the right edge */
+  background-color: #FF6B82;
+  color: white;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 0 0 5px 5px;
+  font-weight: bold;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /*  Adds a subtle shadow */
+  z-index: 1; /* Ensure it stays above the pseudo-elements */
+}
+
+/* Create left triangle */
+.tag::after {
+  content: '';
+  position: absolute;
+  top: 3.5px; /* Adjust as needed */
+  left: -9px; /* Adjust as needed */
+  
+  border-top: 7.5px solid #fb6d92; /* Triangle color */
+  border-right: 7.5px solid transparent;
+  border-left: 7.5px solid transparent;
+  transform: rotate(-45deg);
+  
+}
+
+/* Create right triangle */
+.tag::before {
+  content: '';
+  position: absolute;
+  top: 3.5px; /* Adjust as needed */
+  right: -9px; /* Adjust as needed */
+  border-top: 7.5px solid #fb6d92; /* Triangle color */
+  border-left: 7.5px solid transparent;
+  border-right: 7.5px solid transparent;
+  transform: rotate(45deg)
+}
+.std-price{
+  font-size: 12px;
+}
+
+/* Hide default radio button */
+.custom-radio input[type="radio"] {
+  display: none;
+}
+
+/* Create custom radio button appearance */
+.custom-radio label {
+  display: inline-block;
+  width: 14.46px; /* Adjust size as per the Figma design */
+  height: 14.46px;
+  border: 0.9px solid #ddd; /* Border color for inactive state */
+  border-radius: 50%; /* Make it circular */
+  position: relative;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+/* Add inner circle for active state */
+.custom-radio input[type="radio"]:checked + label::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 9.04px; /* Adjust size for the inner circle */
+  height: 9.04px;
+  background-color: #FF6B82; /* Figma color */
+  border-radius: 50%; /* Make it circular */
+}
+
+/* Change border color on checked */
+.custom-radio input[type="radio"]:checked + label {
+  border-color: #FF6B82;
+}
+
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+}
+/* pumper copyright text */
+.pumper{
+  align-self: flex-end;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.4);
+  margin-top: 2px;
+}
