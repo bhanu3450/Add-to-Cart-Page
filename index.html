@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive BOGO Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+
+    <h1 class="title">
+      <span class="line"></span>
+      YAY! It’s BOGO
+      <span class="line"></span>
+    </h1>
+    
+
+    <!-- Top Box -->
+    <section class="interactive-box" id="box1">
+      <div class="header">
+        <div class="custom-radio">
+          <input type="radio" name="units" id="radio1" />
+          <label for="radio1"></label>
+        </div>        
+        <div class="standard-price">
+          <div class="details">
+            <h2>1 Unit</h2>
+            <span class="discount">10% Off</span>        
+          </div>
+          <P class="std-price">Standard Price</P>
+        </div>
+        <p class="price" style="margin-left:40px ;">
+          <span>$10.00 USD</span>
+          <del>$24.00 USD</del>
+        </p>
+      </div>
+      <div class="options hidden">
+        <!-- Table Headers -->
+        <div class="option-header">
+          <div class="hidden">#</div>
+          <div>Size</div>
+          <div>Color</div>
+        </div>
+        <!-- Option Row 1 -->
+        <div class="option-row">
+          <div>#1</div>
+          <div>
+            <select id="size2-1">
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+            </select>
+          </div>
+          <div>
+            <select id="color2-1">
+              <option value="Black">Black</option>
+              <option value="White">White</option>
+            </select>
+          </div>
+        </div>
+        <!-- Option Row 2 -->
+        <div class="option-row">
+          <div>#2</div>
+          <div>
+            <select id="size2-2">
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+            </select>
+          </div>
+          <div>
+            <select id="color2-2">
+              <option value="Black">Black</option>
+              <option value="White">White</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Middle Box -->
+    <section class="interactive-box" id="box2">
+      <div class="header">
+        <span class="tag">Most Popular</span>
+        <div class="custom-radio">
+          <input type="radio" name="units" id="radio1" />
+          <label for="radio1"></label>
+        </div>   
+        <div class="details">
+          <h2>2 Units</h2>
+          <span class="discount">20% Off</span>
+        </div>
+        <p class="price">
+          <span>$18.00 USD</span>
+          <del>$24.00 USD</del>
+        </p>
+      </div>
+      <div class="options hidden">
+        <!-- Table Headers -->
+        <div class="option-header">
+          <div class="hidden">#</div>
+          <div>Size</div>
+          <div>Color</div>
+        </div>
+        <!-- Option Row 1 -->
+        <div class="option-row">
+          <div>#1</div>
+          <div>
+            <select id="size2-1">
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+            </select>
+          </div>
+          <div>
+            <select id="color2-1">
+              <option value="Black">Black</option>
+              <option value="White">White</option>
+            </select>
+          </div>
+        </div>
+        <!-- Option Row 2 -->
+        <div class="option-row">
+          <div>#2</div>
+          <div>
+            <select id="size2-2">
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+            </select>
+          </div>
+          <div>
+            <select id="color2-2">
+              <option value="Black">Black</option>
+              <option value="White">White</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Bottom Box -->
+    <section class="interactive-box" id="box3">
+      <div class="header">
+        <div class="custom-radio">
+          <input type="radio" name="units" id="radio1" />
+          <label for="radio1"></label>
+        </div>   
+        <div class="details">
+          <h2>3 Units</h2>
+          <span class="discount">30% Off</span>
+        </div>
+        <p class="price">
+          <span>$24.00 USD</span>
+          <del>$24.00 USD</del>
+        </p>
+      </div>
+      <div class="options hidden">
+        <!-- Table Headers -->
+        <div class="option-header">
+          <div class="hidden">#</div>
+          <div>Size</div>
+          <div>Color</div>
+        </div>
+        <!-- Option Row 1 -->
+        <div class="option-row">
+          <div>#1</div>
+          <div>
+            <select id="size2-1">
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+            </select>
+          </div>
+          <div>
+            <select id="color2-1">
+              <option value="Black">Black</option>
+              <option value="White">White</option>
+            </select>
+          </div>
+        </div>
+        <!-- Option Row 2 -->
+        <div class="option-row">
+          <div>#2</div>
+          <div>
+            <select id="size2-2">
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+            </select>
+          </div>
+          <div>
+            <select id="color2-2">
+              <option value="Black">Black</option>
+              <option value="White">White</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p class="free-delivery">Free Delivery</p>
+      <p class="total">Total: <span>$18.00 USD</span></p>
+    </div>
+    <div class="copyright">
+      <button id="addToCart">+ Add to Cart</button>
+    <p class="pumper"><i>@ Powered by Pumper</i></p>
+    </div>
+    
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
