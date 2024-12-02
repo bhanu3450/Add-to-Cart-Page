@@ -1,0 +1,11 @@
+name: Fork Protection
+on:
+  fork:
+    types:
+      - created
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notify owner
+        run: echo "A fork of this repository has been created!"
